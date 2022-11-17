@@ -11,14 +11,7 @@
   </head>
 
   <body>
-  <% if flash.any? %>
-    <div style="background-color: green;">
-    <%= flash[:notice] %>
-    </div>
-    <div style="background-color: red;">
-    <%= flash[:alert] %>
-    </div>
-  <% end %>
+    <%= render "shared/flash" %>
     <%= yield %>
   </body>
 </html>
